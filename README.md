@@ -1,2 +1,2 @@
 # LPCO
-Laboratories of Principles of Computer Organization
+Laboratory of Principles of Computer Organization
