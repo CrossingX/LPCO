@@ -2,10 +2,10 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Mon Dec 09 12:52:41 2019
-# Process ID: 15884
+# Start of session at: Mon Dec 09 20:19:20 2019
+# Process ID: 4024
 # Current directory: E:/AOften/Computer Organization and Design/lab/vivado5/SingleCPU
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15648 E:\AOften\Computer Organization and Design\lab\vivado5\SingleCPU\SingleCPU.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11036 E:\AOften\Computer Organization and Design\lab\vivado5\SingleCPU\SingleCPU.xpr
 # Log file: E:/AOften/Computer Organization and Design/lab/vivado5/SingleCPU/vivado.log
 # Journal file: E:/AOften/Computer Organization and Design/lab/vivado5/SingleCPU\vivado.jou
 #-----------------------------------------------------------
@@ -16,6 +16,6 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx/Vivado/2015.4/data/ip'.
-open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 785.746 ; gain = 146.320
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 764.242 ; gain = 141.414
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Dec 09 13:08:04 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 09 20:20:39 2019...

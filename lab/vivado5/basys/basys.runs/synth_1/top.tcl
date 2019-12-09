@@ -14,7 +14,7 @@ set_property parent.project_path {E:/AOften/Computer Organization and Design/lab
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property vhdl_version vhdl_2k [current_fileset]
-add_files {{e:/AOften/Computer Organization and Design/lab/vivado5/1.coe}}
+add_files {{E:/AOften/Computer Organization and Design/lab/vivado5/1.coe}}
 add_files -quiet {{E:/AOften/Computer Organization and Design/lab/vivado5/basys/basys.runs/irom_synth_1/irom.dcp}}
 set_property used_in_implementation false [get_files {{E:/AOften/Computer Organization and Design/lab/vivado5/basys/basys.runs/irom_synth_1/irom.dcp}}]
 read_verilog -library xil_defaultlib {

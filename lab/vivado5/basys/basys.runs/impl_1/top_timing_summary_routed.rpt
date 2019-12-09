@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-| Date         : Wed Dec 04 17:15:18 2019
+| Date         : Mon Dec 09 20:08:30 2019
 | Host         : LAPTOP-4B4E4EPI running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file top_timing_summary_routed.rpt -rpx top_timing_summary_routed.rpx
 | Design       : top
@@ -58,7 +58,7 @@ Table of Contents
 
  There is 1 register/latch pin with no clock driven by root clock pin: imem/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKARDCLK (HIGH)
 
- There are 20 register/latch pins with no clock driven by root clock pin: imem/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK (HIGH)
+ There are 21 register/latch pins with no clock driven by root clock pin: imem/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK (HIGH)
 
  There are 4 register/latch pins with no clock driven by root clock pin: smg_ip_model/clk_400Hz_reg/C (HIGH)
 
@@ -75,7 +75,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 9414 pins that are not constrained for maximum delay. (HIGH)
+ There are 9415 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

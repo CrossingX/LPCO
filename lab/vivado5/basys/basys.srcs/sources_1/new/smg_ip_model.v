@@ -42,10 +42,10 @@ wei_ctrl <= {wei_ctrl[2:0],wei_ctrl[3]}; //段控制 ,就是把最左边的一位弄到最右边
 reg [3:0]duan_ctrl; 
 always @(wei_ctrl) 
 case(wei_ctrl)
-4'b1110:duan_ctrl=sel?data[31:28]:data[3:0];
- 4'b1101:duan_ctrl=sel?data[27:24]:data[7:4]; 
- 4'b1011:duan_ctrl=sel?data[23:20]:data[11:8];
-  4'b0111:duan_ctrl=sel?data[19:16]:data[15:12]; 
+4'b1110:duan_ctrl=sel?data[19:16]:data[3:0];
+ 4'b1101:duan_ctrl=sel?data[23:20]:data[7:4]; 
+ 4'b1011:duan_ctrl=sel?data[27:24]:data[11:8];
+  4'b0111:duan_ctrl=sel?data[31:28]:data[15:12]; 
   default:duan_ctrl=4'hf;
 endcase
 //----------------------------------------------------------

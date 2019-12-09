@@ -23,6 +23,7 @@ module alu(
 input [31:0] input1, 
 input [31:0] input2, 
 input [3:0] aluCtr, 
+input lui,
 output reg[31:0] aluRes, 
 output reg zero 
 ); 
@@ -38,7 +39,10 @@ else
 zero = 0; 
 end 
 4'b0010: // ¼Ó
-aluRes = input1 + input2; 
+begin
+if(lui==1) aluRes = input1 + (input2<<16);
+else aluRes = input1 + input2; 
+end
 4'b0000: // Óë
 aluRes = input1 & input2; 
 4'b0001: // »ò

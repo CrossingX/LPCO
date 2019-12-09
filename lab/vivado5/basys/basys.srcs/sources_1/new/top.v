@@ -119,6 +119,7 @@ alu alu(.input1(mux6),
 .input2(mux2), 
 .aluCtr(aluCtr), 
 .zero(zero), 
+.lui(lui),
 .aluRes(aluRes));
 // 实例化ALU控制模块
 aluctr aluctr1( 

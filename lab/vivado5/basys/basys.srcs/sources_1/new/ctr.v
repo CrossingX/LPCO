@@ -61,7 +61,7 @@ begin
         begin
             regDst = 0;
             aluSrcA = 0;
-            aluSrcB = 2'b00;
+            aluSrcB = 2'b01;
             memToReg = 0;
             regWrite = 1;
             memRead = 0;

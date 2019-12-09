@@ -43,7 +43,7 @@ always @(ALUOp or funct)
         9'b111_100101: ALUCtr = 4'b0001; // or
         9'b111_100110: ALUCtr = 4'b0100; // xor
         9'b111_101010: ALUCtr = 4'b0111; // slt
-        9'b111_101011: ALUCtr = 4'b1101; // slt
+        9'b111_101011: ALUCtr = 4'b1101; // sltu
         
         9'b111_000000: ALUCtr = 4'b1000; // sll
         9'b111_000010: ALUCtr = 4'b1001; // srl
