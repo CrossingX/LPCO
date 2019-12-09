@@ -1,0 +1,41 @@
+.data
+n1:	.word	14
+n2:	.word	27
+	
+.text
+main:
+	la	$a0,n1
+	la	$a1,n2
+	jal	swap
+	li	$v0,1	# print n1 and n2; should be 27 and 14
+	lw	$a0,n1
+	syscall
+	li	$v0,11
+	li	$a0,' '
+	syscall
+	li	$v0,1 #$a0:显示的整数值
+	lw	$a0,n2
+	syscall
+	li	$v0,11 #$a0:显示的字符
+	li	$a0,'\n'
+	syscall
+	li	$v0,10	# exit
+	syscall
+
+swap:	
+       	move	$fp, $sp	#FRAME	POINTER NOW POINTS TO THE TOP OF STACK
+	addiu 	$sp, $sp, -16	# ALLOCATE 16 BYTES IN THE STACK
+	sw	$a0, 0($sp)	#store the address of n1 into 0($sp)
+	sw 	$a1, 4($sp)	#store the address of n2 into 4($sp)
+	lw	$a0, 0($a0)	#load the value in n1 into $a0
+	lw	$a1, 0($a1)	#load the value in n2 into $a0
+	sw	$a0, 8($sp)	#store the value in n1 into 8($sp)
+	lw	$a0, 0($sp)	#load the address of n1 into $a0
+	sw	$a1, 0($a0)	#store the value in n2 into n1
+	lw	$a0, 8($sp)	#load the value used to be in n1 into $a0
+	lw	$a1, 4($sp)	#load the address of n2 into $a1
+	sw	$a0, 0($a1)	#store the value in n1 into n2
+	lw	$a0, 0($sp)	#load the address of n1 into $a0
+	addiu 	$sp, $sp, 16 
+	jr	$31		#return 
+       	

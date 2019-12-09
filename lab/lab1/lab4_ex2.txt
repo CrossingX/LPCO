@@ -1,0 +1,14 @@
+        .data
+
+        .text
+   main:add $t0, $s0, $zero         #Temporary register $t0 gets the value in $s0
+	add $t1, $s1, $zero	    #Temporary register $t1 gets the value in $s1
+	add $t2, $t0, $t1 	    #Temporary register $t2 gets the value in $t1 and $t0
+	add $t3, $t1, $t2	    #Temporary register $t3 gets the value in $t2 and $t1
+	add $t4, $t2, $t3	    #Temporary register $t4 gets the value in $t3 and $t2
+	add $t5, $t3, $t4	    #Temporary register $t5 gets the value in $t4 and $t3
+	add $t6, $t4, $t5	    #Temporary register $t6 gets the value in $t5 and $t4
+	add $t7, $t5, $t6	    #Temporary register $t7 gets the value in $t6 and $t5
+	j main
+	syscall			
+

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado1/vivado1/student/addsub8/addsub8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addsub8
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado1/vivado1/student/addsub8/addsub8_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addsub8_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado1/addsub/addsub.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

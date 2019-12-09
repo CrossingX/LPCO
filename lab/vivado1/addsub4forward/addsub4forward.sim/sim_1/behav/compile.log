@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado1/addsub4forward/addsub4forward.srcs/sources_1/new/addsub4forward.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chaoadder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado1/addsub4forward/addsub4forward.srcs/sim_1/new/addsub4forward_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simadder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado1/addsub4forward/addsub4forward.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

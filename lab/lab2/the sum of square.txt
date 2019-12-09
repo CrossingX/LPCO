@@ -1,0 +1,23 @@
+.data 
+	.align 2
+	Str: .asciiz "The sum of square  from 1 to 100 is "
+.text
+main:
+	li $t0, 1		#the number increase from 1 to 100
+	li $s0, 0		#the sum of the square from 1 to 100
+loop:	
+	mul $t1, $t0, $t0   	#$t1 gets the suqare of the number
+	addu $s0, $s0, $t1	#add the square of the number into the sum 
+	addiu $t0, $t0, 1	#the count increment
+	bne $t0, 101, loop	#loop continues if the number <=100
+output:
+	li $v0, 4
+	la $a0, Str
+	syscall
+	li $v0, 1
+	li $a0, 0
+	addu $a0, $0, $s0
+	syscall
+finish:	
+	li $v0 ,10
+	syscall

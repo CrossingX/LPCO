@@ -1,0 +1,16 @@
+.data
+ 	foo: .word 1, 2, 3, 4, 5
+.text
+main:
+   	la $t0, foo
+   	li $t2, 0
+loop:
+  	lw $t1, ($t0)
+  	addiu $t1, $t1, 2
+  	sw $t1, ($t0)
+  	addiu $t0, $t0, 4
+  	addiu $t2, $t2, 1
+  	bne $t2, 5, loop
+finish:
+  	li $v0, 10
+  	syscall

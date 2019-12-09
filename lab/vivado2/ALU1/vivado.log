@@ -1,0 +1,165 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Nov 12 21:10:16 2019
+# Process ID: 16628
+# Current directory: E:/AOften/Computer Organization and Design/lab/vivado2/ALU1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17360 E:\AOften\Computer Organization and Design\lab\vivado2\ALU1\ALU1.xpr
+# Log file: E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/vivado.log
+# Journal file: E:/AOften/Computer Organization and Design/lab/vivado2/ALU1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 757.852 ; gain = 124.664
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj alu_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/sim_1/new/alu_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 3ccbe788ae8a4414bb58fb30aaac6077 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot alu_sim_behav xil_defaultlib.alu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.alu_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot alu_sim_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source E:/AOften/Computer -notrace
+couldn't read file "E:/AOften/Computer": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 12 22:03:03 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 787.652 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_sim_behav -key {Behavioral:sim_1:Functional:alu_sim} -tclbatch {alu_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source alu_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 787.652 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:34 ; elapsed = 00:58:31 . Memory (MB): peak = 846.375 ; gain = 675.105
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'alu' [E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-256] done synthesizing module 'alu' (1#1) [E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-638] synthesizing module 'display' [E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/sources_1/new/display.v:23]
+WARNING: [Synth 8-567] referenced signal 'data' should be on the sensitivity list [E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/sources_1/new/display.v:46]
+INFO: [Synth 8-226] default block is never used [E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/sources_1/new/display.v:61]
+INFO: [Synth 8-256] done synthesizing module 'display' (2#1) [E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/sources_1/new/display.v:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (3#1) [E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design top has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:35 ; elapsed = 00:58:31 . Memory (MB): peak = 868.438 ; gain = 697.168
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:35 ; elapsed = 00:58:32 . Memory (MB): peak = 868.438 ; gain = 697.168
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 11 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/constrs_1/new/AlU.xdc]
+Finished Parsing XDC File [E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/constrs_1/new/AlU.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:45 ; elapsed = 00:58:44 . Memory (MB): peak = 1156.391 ; gain = 985.121
+13 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1156.391 ; gain = 346.137
+report_drc -name drc_1 -ruledecks {default}
+INFO: [DRC 23-27] Running DRC with 2 threads
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/sources_1/new/alu.v" into library work [E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/sources_1/new/alu.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/sources_1/new/display.v" into library work [E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/sources_1/new/display.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/sources_1/new/top.v" into library work [E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/sources_1/new/top.v:1]
+[Tue Nov 12 22:09:55 2019] Launched synth_1...
+Run output will be captured here: E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/constrs_1/new/AlU.xdc]
+Finished Parsing XDC File [E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.srcs/constrs_1/new/AlU.xdc]
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_drc -name drc_1 -ruledecks {default}
+INFO: [DRC 23-27] Running DRC with 2 threads
+launch_runs impl_1
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1630.367 ; gain = 0.000
+[Tue Nov 12 22:12:06 2019] Launched impl_1...
+Run output will be captured here: E:/AOften/Computer Organization and Design/lab/vivado2/ALU1/ALU1.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 12 22:58:16 2019...

@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Nov 30 14:25:16 2019
+# Process ID: 16012
+# Current directory: E:/AOften/Computer Organization and Design/lab/vivado5/SingleCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15828 E:\AOften\Computer Organization and Design\lab\vivado5\SingleCPU\SingleCPU.xpr
+# Log file: E:/AOften/Computer Organization and Design/lab/vivado5/SingleCPU/vivado.log
+# Journal file: E:/AOften/Computer Organization and Design/lab/vivado5/SingleCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/AOften/Computer Organization and Design/lab/vivado5/SingleCPU/SingleCPU.xpr}
+remove_files {{E:/AOften/Computer Organization and Design/lab/vivado5/SingleCPU/SingleCPU.srcs/sources_1/new/Shifter.v}}
+launch_simulation -mode post-synthesis -type functional
+launch_simulation
+source aluctrsim.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+set_property top ctrsim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+source ctrsim.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source ctrsim.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+close_sim

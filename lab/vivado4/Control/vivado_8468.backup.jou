@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Nov 25 12:43:37 2019
+# Process ID: 8468
+# Current directory: E:/AOften/Computer Organization and Design/lab/vivado4/Control
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9404 E:\AOften\Computer Organization and Design\lab\vivado4\Control\Control.xpr
+# Log file: E:/AOften/Computer Organization and Design/lab/vivado4/Control/vivado.log
+# Journal file: E:/AOften/Computer Organization and Design/lab/vivado4/Control\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/AOften/Computer Organization and Design/lab/vivado4/Control/Control.xpr}
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1

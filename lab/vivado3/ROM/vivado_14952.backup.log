@@ -1,0 +1,343 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Nov 19 21:16:27 2019
+# Process ID: 14952
+# Current directory: E:/AOften/Computer Organization and Design/lab/vivado3/ROM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4136 E:\AOften\Computer Organization and Design\lab\vivado3\ROM\ROM.xpr
+# Log file: E:/AOften/Computer Organization and Design/lab/vivado3/ROM/vivado.log
+# Journal file: E:/AOften/Computer Organization and Design/lab/vivado3/ROM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 838.195 ; gain = 200.387
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'rom_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.sim/sim_1/behav/Ins_Rom.mif'
+INFO: [USF-XSim-25] Exported 'E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.sim/sim_1/behav/prgmip16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.sim/sim_1/behav'
+"xvlog -m64 --relax -prj rom_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/sources_1/new/rom_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 6f25b7bab77c4143b97a3f8f36843c3f --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot rom_tb_behav xil_defaultlib.rom_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <rom_top> not found while processing module instance <rom_top> [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/sources_1/new/rom_top.v:11]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-99] Step results log file:'E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.sim/sim_1/behav/elaborate.log' file for more information.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 880.742 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files {E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/sources_1/ip/Ins_Rom/Ins_Rom.xci}]
+WARNING: [Vivado 12-818] No files matched 'E:/AOften/Computer'
+WARNING: [Vivado 12-818] No files matched 'Organization'
+WARNING: [Vivado 12-818] No files matched 'and'
+WARNING: [Vivado 12-818] No files matched 'Design/lab/vivado3/ROM/ROM.srcs/sources_1/ip/Ins_Rom/Ins_Rom.xci'
+export_ip_user_files -of_objects [get_files {E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/sources_1/ip/Ins_Rom/Ins_Rom.xci}] -no_script -force -quiet
+WARNING: [Vivado 12-818] No files matched 'E:/AOften/Computer'
+WARNING: [Vivado 12-818] No files matched 'Organization'
+WARNING: [Vivado 12-818] No files matched 'and'
+WARNING: [Vivado 12-818] No files matched 'Design/lab/vivado3/ROM/ROM.srcs/sources_1/ip/Ins_Rom/Ins_Rom.xci'
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'rom_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.sim/sim_1/behav/Ins_Rom.mif'
+INFO: [USF-XSim-25] Exported 'E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.sim/sim_1/behav/prgmip16.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.sim/sim_1/behav'
+"xvlog -m64 --relax -prj rom_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/sources_1/new/rom_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/sim_1/new/rom_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj rom_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd" into library blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_write_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity write_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_read_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity read_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_output_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_softecc_output_reg_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_mem_module
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity beh_ff_clr
+INFO: [VRFC 10-307] analyzing entity beh_ff_ce
+INFO: [VRFC 10-307] analyzing entity beh_ff_pre
+INFO: [VRFC 10-307] analyzing entity beh_muxf7
+INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/sources_1/ip/Ins_Rom/sim/Ins_Rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Ins_Rom
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 6f25b7bab77c4143b97a3f8f36843c3f --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot rom_tb_behav xil_defaultlib.rom_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_softecc_output_reg_stage [\blk_mem_gen_v8_3_1_softecc_outp...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture ins_rom_arch of entity xil_defaultlib.Ins_Rom [ins_rom_default]
+Compiling module xil_defaultlib.rom_top
+Compiling module xil_defaultlib.rom_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot rom_tb_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source E:/AOften/Computer -notrace
+couldn't read file "E:/AOften/Computer": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 19 21:52:02 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 880.742 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "rom_tb_behav -key {Behavioral:sim_1:Functional:rom_tb} -tclbatch {rom_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source rom_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'rom_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 880.742 ; gain = 0.000
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run Ins_Rom_synth_1
+launch_runs Ins_Rom_synth_1
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Ins_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Ins_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Ins_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'Ins_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Ins_Rom'...
+[Tue Nov 19 22:19:50 2019] Launched Ins_Rom_synth_1...
+Run output will be captured here: E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.runs/Ins_Rom_synth_1/runme.log
+wait_on_run Ins_Rom_synth_1
+[Tue Nov 19 22:19:50 2019] Waiting for Ins_Rom_synth_1 to finish...
+[Tue Nov 19 22:19:55 2019] Waiting for Ins_Rom_synth_1 to finish...
+[Tue Nov 19 22:20:00 2019] Waiting for Ins_Rom_synth_1 to finish...
+[Tue Nov 19 22:20:05 2019] Waiting for Ins_Rom_synth_1 to finish...
+[Tue Nov 19 22:20:15 2019] Waiting for Ins_Rom_synth_1 to finish...
+[Tue Nov 19 22:20:26 2019] Waiting for Ins_Rom_synth_1 to finish...
+[Tue Nov 19 22:20:36 2019] Waiting for Ins_Rom_synth_1 to finish...
+[Tue Nov 19 22:20:46 2019] Waiting for Ins_Rom_synth_1 to finish...
+[Tue Nov 19 22:21:07 2019] Waiting for Ins_Rom_synth_1 to finish...
+[Tue Nov 19 22:21:27 2019] Waiting for Ins_Rom_synth_1 to finish...
+[Tue Nov 19 22:21:42 2019] Ins_Rom_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:03 ; elapsed = 00:01:53 . Memory (MB): peak = 940.262 ; gain = 3.105
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: rom_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:02:45 ; elapsed = 01:05:09 . Memory (MB): peak = 974.094 ; gain = 802.254
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'rom_top' [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/sources_1/new/rom_top.v:21]
+INFO: [Synth 8-638] synthesizing module 'Ins_Rom' [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/.Xil/Vivado-14952-LAPTOP-4B4E4EPI/realtime/Ins_Rom_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'Ins_Rom' (1#1) [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/.Xil/Vivado-14952-LAPTOP-4B4E4EPI/realtime/Ins_Rom_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'display' [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/sources_1/new/display.v:23]
+WARNING: [Synth 8-567] referenced signal 'data' should be on the sensitivity list [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/sources_1/new/display.v:39]
+INFO: [Synth 8-226] default block is never used [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/sources_1/new/display.v:54]
+INFO: [Synth 8-256] done synthesizing module 'display' (2#1) [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/sources_1/new/display.v:23]
+INFO: [Synth 8-256] done synthesizing module 'rom_top' (3#1) [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/sources_1/new/rom_top.v:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:46 ; elapsed = 01:05:10 . Memory (MB): peak = 1001.379 ; gain = 829.539
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:46 ; elapsed = 01:05:10 . Memory (MB): peak = 1001.379 ; gain = 829.539
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.runs/Ins_Rom_synth_1/Ins_Rom.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 11 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/.Xil/Vivado-14952-LAPTOP-4B4E4EPI/dcp/Ins_Rom_in_context.xdc] for cell 'your_instance_name'
+Finished Parsing XDC File [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/.Xil/Vivado-14952-LAPTOP-4B4E4EPI/dcp/Ins_Rom_in_context.xdc] for cell 'your_instance_name'
+Parsing XDC File [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/constrs_1/new/rom.xdc]
+Finished Parsing XDC File [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/constrs_1/new/rom.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:02:56 ; elapsed = 01:05:17 . Memory (MB): peak = 1278.008 ; gain = 1106.168
+17 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1278.008 ; gain = 337.746
+report_drc -name drc_1 -ruledecks {default}
+INFO: [DRC 23-27] Running DRC with 2 threads
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/sources_1/new/display.v" into library work [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/sources_1/new/display.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/sources_1/new/rom_top.v" into library work [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/sources_1/new/rom_top.v:1]
+[Tue Nov 19 22:22:53 2019] Launched synth_1...
+Run output will be captured here: E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Project 1-454] Reading design checkpoint 'E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.runs/Ins_Rom_synth_1/Ins_Rom.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/constrs_1/new/rom.xdc]
+Finished Parsing XDC File [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.srcs/constrs_1/new/rom.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.runs/Ins_Rom_synth_1/Ins_Rom.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_drc -name drc_1 -ruledecks {default}
+INFO: [DRC 23-27] Running DRC with 2 threads
+launch_runs impl_1 -jobs 4
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1801.453 ; gain = 0.000
+[Tue Nov 19 22:24:59 2019] Launched impl_1...
+Run output will be captured here: E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Nov 19 22:26:00 2019] Launched impl_1...
+Run output will be captured here: E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/.Xil/Vivado-14952-LAPTOP-4B4E4EPI/dcp/rom_top.xdc]
+Finished Parsing XDC File [E:/AOften/Computer Organization and Design/lab/vivado3/ROM/.Xil/Vivado-14952-LAPTOP-4B4E4EPI/dcp/rom_top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1844.777 ; gain = 0.066
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1844.777 ; gain = 0.066
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+report_drc -name drc_1 -ruledecks {default}
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc -name drc_2 -ruledecks {default}
+INFO: [DRC 23-27] Running DRC with 2 threads
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.4
+  **** Build date : Nov 17 2015-18:01:07
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+ERROR: [Labtoolstcl 44-26] No hardware targets exist on the server [localhost]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the disconnect_hw_server and connect_hw_server commands
+to re-register the hardware targets.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183739146A
+set_property PROGRAM.FILE {E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.runs/impl_1/rom_top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.runs/impl_1/rom_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183739146A
+close_hw
+close_design
+close_design
+close_design
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 19 22:59:39 2019...

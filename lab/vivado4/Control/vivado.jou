@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Nov 26 12:48:12 2019
+# Process ID: 13388
+# Current directory: E:/AOften/Computer Organization and Design/lab/vivado4/Control
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5784 E:\AOften\Computer Organization and Design\lab\vivado4\Control\Control.xpr
+# Log file: E:/AOften/Computer Organization and Design/lab/vivado4/Control/vivado.log
+# Journal file: E:/AOften/Computer Organization and Design/lab/vivado4/Control\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/AOften/Computer Organization and Design/lab/vivado4/Control/Control.xpr}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_drc -name drc_1 -ruledecks {default}
+synth_design -rtl -name rtl_1
+report_drc -name drc_1 -ruledecks {default}
+close_design
+close_design
+set_property top aluctrsim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+source aluctrsim.tcl
+close_sim
+set_property top ctrsim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+source ctrsim.tcl
+set_property top topsim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+source topsim.tcl
+close_sim
+launch_simulation
+source topsim.tcl
+close_sim
+close_sim

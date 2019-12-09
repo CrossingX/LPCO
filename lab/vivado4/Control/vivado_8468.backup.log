@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Nov 25 12:43:37 2019
+# Process ID: 8468
+# Current directory: E:/AOften/Computer Organization and Design/lab/vivado4/Control
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9404 E:\AOften\Computer Organization and Design\lab\vivado4\Control\Control.xpr
+# Log file: E:/AOften/Computer Organization and Design/lab/vivado4/Control/vivado.log
+# Journal file: E:/AOften/Computer Organization and Design/lab/vivado4/Control\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/AOften/Computer Organization and Design/lab/vivado4/Control/Control.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 758.277 ; gain = 130.500
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado4/Control/Control.srcs/sources_1/new/aluctr.v" into library work [E:/AOften/Computer Organization and Design/lab/vivado4/Control/Control.srcs/sources_1/new/aluctr.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado4/Control/Control.srcs/sources_1/new/ctr.v" into library work [E:/AOften/Computer Organization and Design/lab/vivado4/Control/Control.srcs/sources_1/new/ctr.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado4/Control/Control.srcs/sources_1/new/regFile.v" into library work [E:/AOften/Computer Organization and Design/lab/vivado4/Control/Control.srcs/sources_1/new/regFile.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/AOften/Computer Organization and Design/lab/vivado4/Control/Control.srcs/sources_1/new/top.v" into library work [E:/AOften/Computer Organization and Design/lab/vivado4/Control/Control.srcs/sources_1/new/top.v:1]
+[Mon Nov 25 13:44:32 2019] Launched synth_1...
+Run output will be captured here: E:/AOften/Computer Organization and Design/lab/vivado4/Control/Control.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Nov 25 13:45:00 2019] Launched impl_1...
+Run output will be captured here: E:/AOften/Computer Organization and Design/lab/vivado4/Control/Control.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 25 13:45:58 2019...

@@ -1,0 +1,25 @@
+.data
+Z:	.space 200
+.text
+main:
+	li	$t0, 0		#K
+	li	$t1, 56		#Y
+	la	$t7, Z		#the address of Z
+	li	$s0, 0		#offset
+loop:
+	slti 	$t2 $t0, 50 	#ÅÐ¶ÏKÊÇ·ñÐ¡ÓÚ50
+	beq	$t2, $0, exit	#if $t2 = 0, exit
+	srl	$t3, $t0, 2	#$t3 = K/4
+	addi	$t4, $t3, 210	#$t4 = K/4+210
+	sll	$t5, $t4, 4	#$t5 = 16*(K/4+210)
+	sub	$t6, $t1, $t5	#$t6 = Y-16*(K/4+210)
+	add	$t7, $t7, $s0	#$t7 = the address of Z[K]
+	li	$s0, 4		#set offset to 4
+	sw	$t6, ($t7)	#store the result into Z[K]
+	addi	$t0, $t0, 1	#K=K+1
+	j 	loop		#loop
+exit:
+	li 	$v0,10
+	syscall 
+	
+	

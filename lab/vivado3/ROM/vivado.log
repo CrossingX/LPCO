@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Nov 20 16:14:20 2019
+# Process ID: 2296
+# Current directory: E:/AOften/Computer Organization and Design/lab/vivado3/ROM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14448 E:\AOften\Computer Organization and Design\lab\vivado3\ROM\ROM.xpr
+# Log file: E:/AOften/Computer Organization and Design/lab/vivado3/ROM/vivado.log
+# Journal file: E:/AOften/Computer Organization and Design/lab/vivado3/ROM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/AOften/Computer Organization and Design/lab/vivado3/ROM/ROM.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 755.777 ; gain = 113.902
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 20 16:15:23 2019...
