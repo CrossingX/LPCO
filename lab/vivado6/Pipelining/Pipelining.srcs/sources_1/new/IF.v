@@ -59,9 +59,8 @@ adder_if adder32_bits_if(
  
 //÷∏¡ÓROM
 InstructionROM InstructionROM (
-  .clka(clk),    // input wire clka
-  .addra(pc[11:2]),  // input wire [7 : 0] addra
-  .douta(inst_if)  // output wire [31 : 0] douta
+  .a(pc[11:2]),      // input wire [9 : 0] a
+  .spo(inst_if)  // output wire [31 : 0] spo
 );
 endmodule
 

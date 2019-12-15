@@ -1,1 +1,0 @@
--wto "0b4e5a4dc0f84940b7152eb2ab798bee" --debug "typical" --relax --mt "2" -L "blk_mem_gen_v8_3_1" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "topsim_behav" "xil_defaultlib.topsim" "xil_defaultlib.glbl" -log "elaborate.log" 

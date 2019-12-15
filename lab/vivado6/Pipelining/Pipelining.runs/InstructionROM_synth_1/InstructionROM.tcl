@@ -14,49 +14,50 @@ set_property parent.project_path {E:/AOften/Computer Organization and Design/lab
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property vhdl_version vhdl_2k [current_fileset]
-read_ip {{e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM/InstructionROM.xci}}
-set_property used_in_implementation false [get_files -all {{e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM/InstructionROM.dcp}}]
-set_property is_locked true [get_files {{e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM/InstructionROM.xci}}]
+read_ip {{e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM_1/InstructionROM.xci}}
+set_property is_locked true [get_files {{e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM_1/InstructionROM.xci}}]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 synth_design -top InstructionROM -part xc7a35tcpg236-1 -mode out_of_context
 rename_ref -prefix_all InstructionROM_
 write_checkpoint -noxdef InstructionROM.dcp
 catch { report_utilization -file InstructionROM_utilization_synth.rpt -pb InstructionROM_utilization_synth.pb }
 if { [catch {
-  file copy -force {E:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.runs/InstructionROM_synth_1/InstructionROM.dcp} {e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM/InstructionROM.dcp}
+  file copy -force {E:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.runs/InstructionROM_synth_1/InstructionROM.dcp} {e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM_1/InstructionROM.dcp}
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 if { [catch {
-  write_verilog -force -mode synth_stub {e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM/InstructionROM_stub.v}
+  write_verilog -force -mode synth_stub {e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM_1/InstructionROM_stub.v}
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 if { [catch {
-  write_vhdl -force -mode synth_stub {e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM/InstructionROM_stub.vhdl}
+  write_vhdl -force -mode synth_stub {e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM_1/InstructionROM_stub.vhdl}
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 if { [catch {
-  write_verilog -force -mode funcsim {e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM/InstructionROM_sim_netlist.v}
+  write_verilog -force -mode funcsim {e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM_1/InstructionROM_sim_netlist.v}
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 if { [catch {
-  write_vhdl -force -mode funcsim {e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM/InstructionROM_sim_netlist.vhdl}
+  write_vhdl -force -mode funcsim {e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM_1/InstructionROM_sim_netlist.vhdl}
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if {[file isdir {E:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.ip_user_files/ip/InstructionROM}]} {
   catch { 
-    file copy -force {{e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM/InstructionROM_stub.v}} {E:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.ip_user_files/ip/InstructionROM}
+    file copy -force {{e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM_1/InstructionROM_stub.v}} {E:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.ip_user_files/ip/InstructionROM}
   }
 }
 
 if {[file isdir {E:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.ip_user_files/ip/InstructionROM}]} {
   catch { 
-    file copy -force {{e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM/InstructionROM_stub.vhdl}} {E:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.ip_user_files/ip/InstructionROM}
+    file copy -force {{e:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.srcs/sources_1/ip/InstructionROM_1/InstructionROM_stub.vhdl}} {E:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.ip_user_files/ip/InstructionROM}
   }
 }

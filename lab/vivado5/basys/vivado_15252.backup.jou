@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Dec 11 14:49:28 2019
+# Process ID: 15252
+# Current directory: E:/AOften/Computer Organization and Design/lab/vivado5/basys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12632 E:\AOften\Computer Organization and Design\lab\vivado5\basys\basys.xpr
+# Log file: E:/AOften/Computer Organization and Design/lab/vivado5/basys/vivado.log
+# Journal file: E:/AOften/Computer Organization and Design/lab/vivado5/basys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/AOften/Computer Organization and Design/lab/vivado5/basys/basys.xpr}
+open_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/AOften/Computer Organization and Design/lab/vivado5/basys/basys.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {E:/AOften/Computer Organization and Design/lab/vivado5/basys/basys.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {E:/AOften/Computer Organization and Design/lab/vivado5/basys/basys.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
