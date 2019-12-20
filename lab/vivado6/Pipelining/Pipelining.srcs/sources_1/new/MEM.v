@@ -38,8 +38,8 @@ output[31:0] Dout_mem;
  
 DataRAM DataRAM(
 .clka(clk),//input clka
-.wea(~MemRead_mem&MemWrite_mem),//input [0:0] wea
-.addra(alu_res_mem[11:2]),//input [9 : 0] addra
+.wea(~MemRead_mem & MemWrite_mem),//input [0:0] wea
+.addra(alu_res_mem[9:0]),//input [9 : 0] addra
 .dina(RtData_mem),//input [31:0] dina
 .douta(Dout_mem)//output [31:0] douta
 );

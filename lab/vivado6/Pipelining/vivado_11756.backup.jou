@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Dec 17 12:43:26 2019
+# Process ID: 11756
+# Current directory: E:/AOften/Computer Organization and Design/lab/vivado6/Pipelining
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2764 E:\AOften\Computer Organization and Design\lab\vivado6\Pipelining\Pipelining.xpr
+# Log file: E:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/vivado.log
+# Journal file: E:/AOften/Computer Organization and Design/lab/vivado6/Pipelining\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.xpr}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1

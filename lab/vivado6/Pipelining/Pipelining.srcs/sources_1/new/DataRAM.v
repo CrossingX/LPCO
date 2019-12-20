@@ -27,7 +27,6 @@ input wea,
 			 output [31:0] douta);
 reg [7:0] RAM[1023:0]; 
 //read
-assign douta={{RAM[addra+3]},{RAM[addra+2]},{RAM[addra+1]},{RAM[addra+0]}};
 initial begin
 RAM[0] = 8'h00;
 RAM[1] = 8'h00;
@@ -126,14 +125,17 @@ RAM[93] = 8'h00;
 RAM[94] = 8'h00;
 RAM[95] = 8'h00;
 end
-//write flag作为字节或字半字操作的标志
+assign douta={{RAM[addra]},{RAM[addra+1]},{RAM[addra+2]},{RAM[addra+3]}};
 integer i;
 always @ (posedge clka)
 begin
     if (wea) begin
         begin
-            { {RAM[addra+3]},{RAM[addra+2]},{RAM[addra+1]},{RAM[addra+0]}}=dina;
+            { {RAM[addra]},{RAM[addra+1]},{RAM[addra+2]},{RAM[addra+3]}}=dina;
         end           
     end  
 end
+
+//write flag作为字节或字半字操作的标志
+
 endmodule

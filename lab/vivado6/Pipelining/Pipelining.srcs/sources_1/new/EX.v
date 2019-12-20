@@ -59,7 +59,7 @@ end
  
 //ALU
 ALU ALU(.ALU_operation(ALUCode_ex),.A(RsData_ex),.B(alu_in),
-.res(alu_res_ex),.zero(alu_zero_ex),.overflow()//overflow什么也不连
+.res(alu_res_ex),.zero(alu_zero_ex)//overflow什么也不连
 );
  
 //写寄存器堆地址的多选器

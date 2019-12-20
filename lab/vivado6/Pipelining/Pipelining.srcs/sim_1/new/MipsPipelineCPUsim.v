@@ -39,7 +39,7 @@ initial begin
     clk = 0; 
     reset = 1; 
     // Wait 100 ns for global reset to finish 
-    #10; 
+    #100; 
     reset = 0; 
     end 
     parameter PERIOD = 20; 

@@ -2,8 +2,8 @@
 # Webtalk v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Wed Dec 11 16:48:49 2019
-# Process ID: 15916
+# Start of session at: Wed Dec 18 15:47:47 2019
+# Process ID: 14776
 # Current directory: E:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.sim/sim_1/behav
 # Command line: wbtcv.exe -mode batch -source E:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.sim/sim_1/behav/xsim.dir/MipsPipelineCPUsim_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: E:/AOften/Computer Organization and Design/lab/vivado6/Pipelining/Pipelining.sim/sim_1/behav/webtalk.log
